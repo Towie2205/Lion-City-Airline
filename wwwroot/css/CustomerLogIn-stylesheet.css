@@ -1,0 +1,68 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.image-box {
+    width: 100%;
+    background-color: #1E3559;
+    text-align: center;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.myButton1 {
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: darkblue;
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-width:initial;
+    text-transform: uppercase;
+    position: center;
+    font-size:14px;
+}
+
+.myButton2 {
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    position: center;
+}
+
+/*fieldset {
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: blanchedalmond;
+}*/
+
+body {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+}
+
+.PageTitle {
+    text-align: center;
+    font-weight: bold;
+    color: darkblue;
+}
+

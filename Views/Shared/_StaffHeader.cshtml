@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Lion City Airlines</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/homepage-style.css" />
+</head>
+<body>
+    @*<header>
+             A grey navbar that expands horizontally at medium device
+            <nav class="navbar navbar-expand-md bg-primary navbar-light">
+                 The brand(or icon) of the navbar
+                <a class="navbar-brand" href="~/Home/Homepage"
+                   <img src="~/images/login page image.png" style="width: 20%">
+                </a>
+                <img src="~/images/login page image.png" style="width: 20%">
+                 Toggle/collapsible Button, also known as hamburger button
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#staffNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                 Links in the navbar, displayed as drop-down list when collapsed
+                <div class="collapse navbar-collapse" id="staffNavbar">
+                     Links that are aligned to the left, mr-auto: right margin auto-adjusted
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="b" href="~/FlightRoute/Create">Create Flight</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="b" href="~/FlightSchedule/Create">Create Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="b" href="~/Flight/UpdateFlight">Update Flight</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="b" href="~/Flight/ViewFlight">View Flight</a>
+                        </li>
+
+                    </ul>
+                     Links that are aligned to the right, ml-auto: left margin auto-adjusted
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                             A link for logging out user
+                            <a class="b" href="~/Home/Homepage">Log Out</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>*@
+    <div class="container" id="#top">
+        <header>
+            <img src="~/images/login page image.png" style="width: 20%">
+            <nav>
+                <ul class="nav-links">
+
+                    <li><a href="~/FlightRoute/Create">Create Flight</a></li>
+                    <li><a href="~/FlightSchedule/Create">Create Schedule</a></li>
+                    <li><a href="~/Flight/UpdateFlight">Update Flight</a></li>
+                    <li><a href="~/Flight/ViewFlight">View Flight</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <!-- Bootstrap container, centralise the container between margins -->
+        <div class="container">
+            <!-- 1st row -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <p style="padding:2px 15px;">
+                        @*@{
+                                string userId = "Anonymous";
+                                string userRole = "Unknown";
+                                string userTime = "Unknown";
+                                if (Context.Session.GetString("LoginID") != null)
+                                {
+                                    userId = Context.Session.GetString("LoginID");
+                                }
+                                if (Context.Session.GetString("Role") != null)
+                                {
+                                    userRole = Context.Session.GetString("Role");
+                                }
+                                if (Context.Session.GetString("userLogin") != null)
+                                {
+                                    userTime = Context.Session.GetString("userLogin");
+                                }
+                            }*@
+                        @*Welcome,&nbsp;
+                                <span style="font-weight:bold">@userId</span>&nbsp;
+                                (Role: @userRole).&nbsp;
+                                You have logged in since @userTime.&nbsp;
+                            </p>*@
+                </div>
+            </div>
+            <!-- 2nd row -->
+            <div class="row">
+                <div class="col-sm-12">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        <footer class="border-top small text-right text-muted">
+            <p style="text-align:center">
+                Lion City Airlines
+            </p>
+        </footer>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿* { 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.image-box {
+    width: 100%;
+    background-color: #1E3559;
+    text-align: center;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+

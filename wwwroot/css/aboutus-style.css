@@ -1,0 +1,154 @@
+﻿* {
+    padding: 1;
+    margin: 2;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container header {
+    display: flex;
+    padding: 0;
+    border: 1px solid black;
+    background-color: floralwhite;
+}
+
+    .container header img {
+        width: 150px;
+    }
+
+    .container header nav {
+        width: 100%;
+    }
+
+.nav-links {
+    display: flex;
+    height: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1E3559;
+}
+    .nav-links li a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+.box {
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 10px;
+    background-color: floralwhite;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.row {
+    display: flex;
+    font-family: Arial;
+    align-items: center;
+}
+
+.myButton {
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.myButton2 {
+    border: 2px solid #1E3559;
+    border-radius: 10px;
+    position: center;
+    padding: 10px;
+    background-color: #1E3559;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+/*fieldset {
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: blanchedalmond;
+}*/
+body {
+    font-family: 'Times New Roman';
+    font-size: 21px;
+    background-color: #1E3559;
+    text-align: center;
+}
+
+body2 {
+    font-family: 'Times New Roman';
+    font-size: 14px;
+    background-color: #1E3559;
+
+}
+
+.PageTitle {
+    text-align: center;
+    font-weight: bold;
+    color: #1E3559;
+}
+
+/** {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.image-box {
+    width: 100%;
+    background-color: #1E3559;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myButton {
+    border: 2px solid #1E3559;
+    border-radius: 10px;
+    position: center;
+    padding: 10px;
+    background-color: #1E3559;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+fieldset {
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: blanchedalmond;
+}
+
+body {
+    font-family: 'Times New Roman';
+    font-size: 14px;
+}
+
+body2 {
+    font-family: Calibri;
+    font-size: 14px;
+}
+
+.PageTitle {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}*/
+

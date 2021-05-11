@@ -1,0 +1,46 @@
+﻿@model IEnumerable<web2020apr_p08_t5.Models.FlightSchedule>
+
+@if (Model.ToList().Count > 0)
+{
+    <div class="table-responsive">
+        <table id="viewFlightSchedule" class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ScheduleID</th>
+                    <th>Flight Number</th>
+                    <th>RouteID</th>
+                    <th>AircraftID</th>
+                    <th>Departure DateTime</th>
+                    <th>Arrival DateTime</th>
+                    <th>EconomyClassPrice</th>
+                    <th>BusinessClassPrice</th>
+                    <th>Status</th>
+                    @*<th></th>*@
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@item.ScheduleID.ToString()</td>
+                    <td>@item.FlightNumber</td>
+                    <td>@item.RouteID</td>
+                    <td>@item.AircraftID</td>
+                    <td>@item.DepartureDateTime</td>
+                    <td>@item.ArrivalDateTime</td>
+                    <td>@item.EconomyClassPrice</td>
+                    <td>@item.BusinessClassPrice</td>
+                    <td>@item.Status</td>
+
+                    
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+else
+{
+    <span style="color:red">No record found!</span>
+}

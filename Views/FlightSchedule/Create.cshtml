@@ -1,0 +1,106 @@
+﻿@model web2020apr_p08_t5.Models.FlightSchedule
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_StaffHeader";
+}
+
+<h4 class="PageTitle">Add New Flight Schedule</h4>
+<hr />
+<form asp-action="Create">
+    <fieldset class="FormContent">
+
+        <div class="form-group row">
+            <label asp-for="FlightNumber"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="FlightNumber" class="form-control" />
+                <span asp-validation-for="FlightNumber"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="RouteID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="RouteID" class="form-control" />
+                <span asp-validation-for="RouteID"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="AircraftID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="AircraftID" class="form-control" />
+                <span asp-validation-for="AircraftID"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="DepartureDateTime"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="DepartureDateTime" class="form-control" type="datetime-local" />
+                <span asp-validation-for="DepartureDateTime"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="ArrivalDateTime"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ArrivalDateTime" class="form-control" type="datetime-local" />
+                <span asp-validation-for="ArrivalDateTime"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="EconomyClassPrice"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="EconomyClassPrice" class="form-control" />
+                <span asp-validation-for="EconomyClassPrice"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="BusinessClassPrice"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="BusinessClassPrice" class="form-control" />
+                <span asp-validation-for="BusinessClassPrice"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Status" class="col-sm-3 control-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <select asp-for="Status" class="form-control">
+                    <option value="Opened">Open</option>
+                    <option value="Delayed">Delayed</option>
+                    <option value="Full">Full</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-9 offset-sm-10">
+                <input type="submit" value="Create"
+                       class="btn btn-primary" />
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </fieldset>
+</form>

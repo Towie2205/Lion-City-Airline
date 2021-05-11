@@ -1,0 +1,146 @@
+﻿@model web2020apr_p08_t5.Models.FlightPersonnel
+
+@{
+    ViewData["Title"] = "Create";
+    
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/aboutus-style.css" rel="stylesheet" />
+
+    <style>
+        body{
+            background-color: floralwhite;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <img src="~/images/login page image.png" style="width: 20%">
+                <ul class="nav-links">
+
+                    <li><a href="~/Home/AboutUs">About Us</a></li>
+                    <li><a href="~/Home/ContactUs">Contact Us</a></li>
+                    <li><a href="~/Home/Login">Log In</a></li>
+                    <li><a href="~/Home/Signup">Sign Up</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <h1 class="PageTitle">Create Personnel</h1>
+    </div>
+
+    <div class="row">
+        <hr />
+        <form asp-action="Create">
+            
+
+                <div class="form-group row">
+                    <label asp-for="StaffName"
+                           class="col-sm-3 col-form-label"></label>
+                    <div class="col-sm-9 col-md-5">
+                        <input asp-for="StaffName" class="form-control" />
+                        <span asp-validation-for="StaffName"
+                              class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label asp-for="Gender"
+                           class="col-sm-3 col-form-label"></label>
+                    <div class="col-sm-9 col-md-5">
+                        <div class="form-group form-check-inline">
+                            <label class="col-form-label">
+                                <input asp-for="Gender" type="radio" value="M"
+                                       checked class="form-check-input" />
+                                <span>Male</span>
+                            </label>
+                            <label class="col-form-label">
+                                <input asp-for="Gender" type="radio" value="F"
+                                       class="form-check-input" />
+                                <span>Female</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label asp-for="DateEmployed"
+                           class="col-sm-3 col-form-label"></label>
+                    <div class="col-sm-9 col-md-5">
+                        <input asp-for="DateEmployed" class="form-control" type="datetime-local" />
+                        <span asp-validation-for="DateEmployed"
+                              class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label asp-for="Vocation" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9 col-md-5">
+                        <select asp-for="Vocation" class="form-control">
+                            <option value="Pliot">Pliot</option>
+                            <option value="Flight Attendant">Flight Attendant</option>
+
+                        </select>
+                        <span asp-validation-for="Vocation" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label asp-for="EmailAddr"
+                           class="col-sm-3 col-form-label"></label>
+                    <div class="col-sm-9 col-md-5">
+                        <input asp-for="EmailAddr" class="form-control" />
+                        <span asp-validation-for="EmailAddr"
+                              class="text-danger"></span>
+                    </div>
+                </div>
+
+                @*<div class="form-group row">
+                    <label asp-for="Password"
+                           class="col-sm-3 col-form-label"></label>
+                    <div class="col-sm-9 col-md-5">
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password"
+                              class="text-danger"></span>
+                    </div>
+                </div>*@
+
+
+
+                @*<div class="form-group row">
+                    <label asp-for="Status" class="col-sm-3 control-label"></label>
+                    <div class="col-sm-9 col-md-5">
+                        <select asp-for="Status" class="form-control">
+                            <option value="Active">Active</option>
+                            <option value="Inactive">Inactive</option>
+
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                </div>*@
+
+                <div class="form-group row">
+                    <div class="col-sm-9 offset-sm-10">
+                        <input type="submit" value="Create"
+                               class="btn btn-primary" />
+                    </div>
+                </div>
+
+                <div>
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            
+        </form>
+    </div>
+</body>
+</html>
+

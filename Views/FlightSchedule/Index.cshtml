@@ -1,0 +1,12 @@
+﻿@model IEnumerable<web2020apr_p08_t5.Models.FlightSchedule>
+
+@{
+    ViewData["Title"] = "View Flight Schedule";
+    Layout = "_StaffHeader";
+}
+
+<h4 class="PageTitle">View Flight Schedule</h4>
+<p><a asp-action="Create">Create New Schedule</a></p>
+<!-- Add a partial view to display a list of staff records
+    in a tabular format. -->
+<partial name="~/Views/FlightSchedule/_ViewFlightSchedule.cshtml" model="@Model" />

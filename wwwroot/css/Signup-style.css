@@ -1,0 +1,46 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.image-box {
+    width: 100%;
+    background-color: #1E3559;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myButton {
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    position:center;
+    padding: 10px;
+    background-color: darkblue;
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+        
+}
+/*fieldset {
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: blanchedalmond;
+}*/
+body {
+    font-family: Arial;
+    font-size: 14px;
+}
+.PageTitle {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}

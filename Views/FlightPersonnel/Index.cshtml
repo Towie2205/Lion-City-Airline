@@ -1,0 +1,12 @@
+﻿@model IEnumerable<web2020apr_p08_t5.Models.FlightPersonnel>
+
+@{
+    ViewData["Title"] = "View Flight Personnel";
+    
+}
+
+<h4 class="PageTitle">View Flight Personnel</h4>
+<p><a asp-action="Create">Create New Personnel</a></p>
+<!-- Add a partial view to display a list of staff records
+    in a tabular format. -->
+<partial name="~/Views/FlightPersonnel/_ViewFlightPersonnel.cshtml" model="@Model" />

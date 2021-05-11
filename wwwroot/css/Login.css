@@ -1,0 +1,90 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.image-box {
+    width: 100%;
+    background-color: #1E3559;
+    text-align: center;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../Images/cust login bg.png');
+    padding: 90px;
+    /*margin: auto;*/
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+.myButton {
+    border: 4px solid gold;
+    border-radius: 7px;
+    padding: 27px;
+    background-color: bisque;
+    position: center;
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s;  Safari; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    /*background-image: url('../Images/cust login bg.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-position: left;*/
+}
+
+/*body {
+    background-image: url('../Images/cust login bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}*/
+
+/*.myButton {
+    color: gold;
+    background: bisque;
+    border: 2px solid gold;
+    border-radius: 6px;
+    color: darkblue;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 25px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;*/ /* Safari*/
+/*transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}*/
+/*/**/
+/*fieldset {
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: blanchedalmond;
+}*/
+body {
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    
+}
+
+.PageTitle {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+}

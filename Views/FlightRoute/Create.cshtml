@@ -1,0 +1,76 @@
+﻿@model web2020apr_p08_t5.Models.FlightRoute
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_StaffHeader";
+}
+
+<h4 class="PageTitle">Add New Flight Route</h4>
+<hr />
+<form asp-action="Create">
+    <fieldset class="FormContent">
+        
+        <div class="form-group row">
+            <label asp-for="DepartureCity"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="DepartureCity" class="form-control" />
+                <span asp-validation-for="DepartureCity"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="DepartureCountry"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="DepartureCountry" class="form-control" />
+                <span asp-validation-for="DepartureCountry"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="ArrivalCity"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ArrivalCity" class="form-control" />
+                <span asp-validation-for="ArrivalCity"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="ArrivalCountry"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ArrivalCountry" class="form-control" />
+                <span asp-validation-for="ArrivalCountry"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="FlightDuration"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="FlightDuration" class="form-control" />
+                <span asp-validation-for="FlightDuration"
+                      class="text-danger"></span>
+            </div>
+        </div>
+
+        
+
+        <div class="form-group row">
+            <div class="col-sm-9 offset-sm-10">
+                <input type="submit" value="Create"
+                       class="btn btn-primary" />
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </fieldset>
+</form>
